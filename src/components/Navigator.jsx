@@ -16,7 +16,7 @@ const Navigator = () => {
           onClick={handleBars}
         ></div>
         <a href="#0">
-          <img src="public/assets/Logo.png" alt="" />
+          <img src="images/assets/Logo.png" alt="" />
         </a>
         <ul
           className={`nav d-flex aic jcsb gap40 ${
