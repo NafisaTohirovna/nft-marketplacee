@@ -1,0 +1,149 @@
+body {
+  background: $bg-gray;
+}
+
+.btn {
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  border: 2px solid $purple;
+  background: $purple;
+  color: $white;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i {
+    transition: all 0.5s ease-in-out;
+  }
+}
+.btn:hover {
+  background: transparent;
+  i {
+    color: $purple;
+  }
+}
+
+a {
+  color: $white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  transition: all 0.5s ease-in-out;
+}
+a:hover {
+  color: $purple;
+}
+
+@mixin title($font-size, $line-height, $font-weight) {
+  color: $white;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  font-style: normal;
+  text-transform: capitalize;
+}
+
+h1 {
+  @include title($font-size: 67px, $line-height: 110%, $font-weight: 600);
+  @include max-BP(940px) {
+    font-size: 38px;
+  }
+  @include max-BP(940px) {
+    font-size: 28px;
+  }
+}
+
+h2 {
+  @include title($font-size: 38px, $line-height: 120%, $font-weight: 600);
+  @include max-BP(940px) {
+    font-size: 28px;
+  }
+}
+
+h3 {
+  @include title($font-size: 28px, $line-height: 140%, $font-weight: 700);
+  @include max-BP(940px) {
+    font-size: 22px;
+  }
+}
+h4 {
+  @include title($font-size: 22px, $line-height: 160%, $font-weight: 600);
+  @include max-BP(940px) {
+    font-size: 16px;
+  }
+}
+h5 {
+  @include title($font-size: 16px, $line-height: 140%, $font-weight: 400);
+}
+h6 {
+  @include title($font-size: 16px, $line-height: 140%, $font-weight: 400);
+  color: $white-gray;
+}
+p {
+  @include title($font-size: 22px, $line-height: 160%, $font-weight: 400);
+  margin-top: 10px;
+  @include max-BP(940px) {
+    font-size: 16px;
+  }
+}
+
+main {
+  overflow: hidden;
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+.jcc {
+  justify-content: center;
+}
+.jcsb {
+  justify-content: space-between;
+}
+.aic {
+  align-items: center;
+}
+.ais {
+  align-items: stretch;
+}
+
+.gap40 {
+  gap: 40px;
+}
+.gap30 {
+  gap: 30px;
+}
+.gap20 {
+  gap: 20px;
+}
+.gap10 {
+  gap: 10px;
+}
+
+
+
+.media {
+  display: none;
+}
+
+@include max-BP(650px) {
+  .desktop {
+    display: none;
+  }
+  .media {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
