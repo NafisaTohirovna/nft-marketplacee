@@ -1,5 +1,5 @@
-import heroImg from "../assets/hero-img.png";
-import avatar from "../assets/avatar.png";
+import heroImg from "../images/hero-img.png";
+import avatar from "../images/avatar.png";
 import VanillaTilt from "vanilla-tilt";
 import { useEffect, useRef } from "react";
 

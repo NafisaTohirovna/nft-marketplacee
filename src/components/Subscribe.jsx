@@ -15,7 +15,7 @@ const Subscribe = () => {
     <section id="subscribe">
       <div className="container d-flex jcsb">
         <div className="subscribe-img">
-          <img src="/src/assets/subscribe.png" ref={subscribeRef} />
+          <img src="/src/images/subscribe.png" ref={subscribeRef} />
         </div>
         <div className="subscribe-title">
           <h2>Join our weekly digest</h2>
