@@ -7,7 +7,6 @@ import Hero from "./components/Hero";
 import Magic from "./components/Magic";
 import Navigator from "./components/Navigator";
 import Subscribe from "./components/Subscribe";
-import Slide from "./components/Slide";
 import Works from "./components/Works";
 import "./style/main.css";
 
@@ -24,7 +23,6 @@ function App() {
       <Works />
       <Subscribe />
       <Footer />
-      <Slide />
     </main>
   );
 }
